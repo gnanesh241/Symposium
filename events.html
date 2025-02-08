@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - College Events Fiesta! 🎉</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="noise"></div>
+    <header>
+        <nav>
+            <div class="logo">FEST 2024 🚀</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="events.html" class="active">Events</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="events-page">
+        <h1>Our <span class="highlight">Events</span></h1>
+        
+        <div class="event-categories">
+            <button class="category-btn active" data-category="all">All Events</button>
+            <button class="category-btn" data-category="technical">Technical</button>
+            <button class="category-btn" data-category="non-technical">Non Technical</button>
+        </div>
+
+        <div class="events-grid">
+            <!-- Technical Events -->
+            <div class="event-card" data-category="technical">
+                <div class="event-image" style="background-image: url('https://source.unsplash.com/400x300/?coding')">
+                    <div class="event-date">March 15</div>
+                </div>
+                <div class="event-details">
+                    <h3>Hack Attack</h3>
+                    <p>24-hour coding marathon. Build something awesome!</p>
+                    <ul class="event-info">
+                        <li><i class="fas fa-clock"></i> 24 Hours</li>
+                        <li><i class="fas fa-users"></i> Team of 4</li>
+                        <li><i class="fas fa-trophy"></i> ₹50,000 Prize</li>
+                    </ul>
+                    <button class="register-btn" onclick="openRegistrationModal('Hack Attack')">Register Now!</button>
+                </div>
+            </div>
+
+            <!-- Non Technical Events -->
+            <div class="event-card" data-category="non-technical">
+                <div class="event-image" style="background-image: url('https://source.unsplash.com/400x300/?dance')">
+                    <div class="event-date">March 16</div>
+                </div>
+                <div class="event-details">
+                    <h3>Dance Mania</h3>
+                    <p>Show your moves in this epic dance battle!</p>
+                    <ul class="event-info">
+                        <li><i class="fas fa-clock"></i> 2 Hours</li>
+                        <li><i class="fas fa-users"></i> Solo/Group</li>
+                        <li><i class="fas fa-trophy"></i> ₹30,000 Prize</li>
+                    </ul>
+                    <button class="register-btn" onclick="openRegistrationModal('Dance Mania')">Register Now!</button>
+                </div>
+            </div>
+
+            <!-- Sports Events -->
+            <div class="event-card" data-category="sports">
+                <div class="event-image" style="background-image: url('https://source.unsplash.com/400x300/?basketball')">
+                    <div class="event-date">March 17</div>
+                </div>
+                <div class="event-details">
+                    <h3>Basketball Tournament</h3>
+                    <p>Show your team spirit in this exciting tournament!</p>
+                    <ul class="event-info">
+                        <li><i class="fas fa-clock"></i> 2 Days</li>
+                        <li><i class="fas fa-users"></i> Team of 5</li>
+                        <li><i class="fas fa-trophy"></i> ₹25,000 Prize</li>
+                    </ul>
+                    <button class="register-btn" onclick="openRegistrationModal('Basketball Tournament')">Register Now!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Register for <span id="eventName"></span></h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="college">College</label>
+                    <input type="text" id="college" required>
+                </div>
+                <div class="form-group">
+                    <label for="teamSize">Team Size</label>
+                    <select id="teamSize">
+                        <option value="1">Solo</option>
+                        <option value="2">2 Members</option>
+                        <option value="4">4 Members</option>
+                        <option value="5+">5+ Members</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Submit Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p>© 2024 College Events Fiesta. Made with 💖 by Students</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
