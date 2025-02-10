@@ -156,14 +156,88 @@ h1 {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
+    position: relative;
+}
+
+.events-section .event-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .events-section .event-details {
     padding: 1.5rem;
+    padding-bottom: 4rem;
 }
 
 .events-section .register-btn {
-    display: none; /* Hide register button on home page */
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    padding: 0.8rem;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.events-section .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.events-section .register-btn:hover {
+    background: var(--primary-color);
+}
+
+/* View All Events text link */
+.view-all-events {
+    display: block;
+    width: fit-content;
+    margin: 3rem auto 0;
+    padding: 1rem 3rem;
+    font-family: 'Righteous', cursive;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.view-all-events::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background: var(--secondary-color);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.view-all-events:hover {
+    color: var(--primary-color);
+}
+
+.view-all-events:hover::after {
+    width: 80%;
+    background: var(--primary-color);
+}
+
+.view-all-events i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.view-all-events:hover i {
+    transform: translateX(5px);
 }
 
 .event-image {
