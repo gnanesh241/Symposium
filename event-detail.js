@@ -1,10 +1,12 @@
+let currentEvent = null;
+
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const eventId = urlParams.get('event');
 
     if (eventId && eventsData[eventId]) {
-        const event = eventsData[eventId];
-        populateEventDetails(event);
+        currentEvent = eventsData[eventId];
+        populateEventDetails(currentEvent);
     } else {
         window.location.href = 'events.html';
     }

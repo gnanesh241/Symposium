@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
     <div class="noise"></div>
     <header>
         <nav>
@@ -33,100 +35,112 @@
         <div class="events-grid">
             <!-- Technical Events -->
             <div class="event-card" data-category="technical">
-                <div class="event-image" style="background-image: url('https://source.unsplash.com/400x300/?coding')">
-                    <div class="event-date">March 15</div>
-                </div>
-                <div class="event-details">
-                    <h3>Hack Attack</h3>
-                    <p>24-hour coding marathon. Build something awesome!</p>
-                    <ul class="event-info">
-                        <li><i class="fas fa-clock"></i> 24 Hours</li>
-                        <li><i class="fas fa-users"></i> Team of 4</li>
-                        <li><i class="fas fa-trophy"></i> ₹50,000 Prize</li>
-                    </ul>
-                    <button class="register-btn" onclick="openRegistrationModal('Hack Attack')">Register Now!</button>
-                </div>
+                <a href="event-detail.html?event=hack-attack" class="event-link">
+                    <div class="event-image" style="background-image: url('https://source.unsplash.com/400x300/?coding')">
+                        <div class="event-date">March 15</div>
+                    </div>
+                    <div class="event-details">
+                        <h3>Hack Attack</h3>
+                        <p>24-hour coding marathon. Build something awesome!</p>
+                        <ul class="event-info">
+                            <li><i class="fas fa-clock"></i> 24 Hours</li>
+                            <li><i class="fas fa-users"></i> Team of 4</li>
+                            <li><i class="fas fa-trophy"></i> ₹50,000 Prize</li>
+                        </ul>
+                        <button class="register-btn" onclick="openRegistrationModal('Hack Attack')">Register Now!</button>
+                    </div>
+                </a>
             </div>
 
             <div class="event-card" data-category="technical">
-                <div class="event-image" style="background-image: url('https://source.unsplash.com/400x300/?robotics')">
-                    <div class="event-date">March 16</div>
-                </div>
-                <div class="event-details">
-                    <h3>RoboWars</h3>
-                    <p>Battle of robots! Design, build and compete.</p>
-                    <ul class="event-info">
-                        <li><i class="fas fa-clock"></i> 8 Hours</li>
-                        <li><i class="fas fa-users"></i> Team of 3</li>
-                        <li><i class="fas fa-trophy"></i> ₹40,000 Prize</li>
-                    </ul>
-                    <button class="register-btn" onclick="openRegistrationModal('RoboWars')">Register Now!</button>
-                </div>
+                <a href="event-detail.html?event=robo-wars" class="event-link">
+                    <div class="event-image" style="background-image: url('https://source.unsplash.com/400x300/?robotics')">
+                        <div class="event-date">March 16</div>
+                    </div>
+                    <div class="event-details">
+                        <h3>RoboWars</h3>
+                        <p>Battle of robots! Design, build and compete.</p>
+                        <ul class="event-info">
+                            <li><i class="fas fa-clock"></i> 8 Hours</li>
+                            <li><i class="fas fa-users"></i> Team of 3</li>
+                            <li><i class="fas fa-trophy"></i> ₹40,000 Prize</li>
+                        </ul>
+                        <button class="register-btn" onclick="openRegistrationModal('RoboWars')">Register Now!</button>
+                    </div>
+                </a>
             </div>
 
             <div class="event-card" data-category="technical">
-                <div class="event-image" style="background-image: url('https://source.unsplash.com/400x300/?debugging')">
-                    <div class="event-date">March 17</div>
-                </div>
-                <div class="event-details">
-                    <h3>Debug Master</h3>
-                    <p>Find bugs, fix code, win prizes!</p>
-                    <ul class="event-info">
-                        <li><i class="fas fa-clock"></i> 4 Hours</li>
-                        <li><i class="fas fa-users"></i> Solo</li>
-                        <li><i class="fas fa-trophy"></i> ₹30,000 Prize</li>
-                    </ul>
-                    <button class="register-btn" onclick="openRegistrationModal('Debug Master')">Register Now!</button>
-                </div>
+                <a href="event-detail.html?event=debug-master" class="event-link">
+                    <div class="event-image" style="background-image: url('https://source.unsplash.com/400x300/?debugging')">
+                        <div class="event-date">March 17</div>
+                    </div>
+                    <div class="event-details">
+                        <h3>Debug Master</h3>
+                        <p>Find bugs, fix code, win prizes!</p>
+                        <ul class="event-info">
+                            <li><i class="fas fa-clock"></i> 4 Hours</li>
+                            <li><i class="fas fa-users"></i> Solo</li>
+                            <li><i class="fas fa-trophy"></i> ₹30,000 Prize</li>
+                        </ul>
+                        <button class="register-btn" onclick="openRegistrationModal('Debug Master')">Register Now!</button>
+                    </div>
+                </a>
             </div>
 
             <!-- Non Technical Events -->
             <div class="event-card" data-category="non-technical">
-                <div class="event-image" style="background-image: url('https://source.unsplash.com/400x300/?dance')">
-                    <div class="event-date">March 18</div>
-                </div>
-                <div class="event-details">
-                    <h3>Dance Mania</h3>
-                    <p>Show your moves in this epic dance battle!</p>
-                    <ul class="event-info">
-                        <li><i class="fas fa-clock"></i> 2 Hours</li>
-                        <li><i class="fas fa-users"></i> Solo/Group</li>
-                        <li><i class="fas fa-trophy"></i> ₹30,000 Prize</li>
-                    </ul>
-                    <button class="register-btn" onclick="openRegistrationModal('Dance Mania')">Register Now!</button>
-                </div>
+                <a href="event-detail.html?event=dance-mania" class="event-link">
+                    <div class="event-image" style="background-image: url('https://source.unsplash.com/400x300/?dance')">
+                        <div class="event-date">March 18</div>
+                    </div>
+                    <div class="event-details">
+                        <h3>Dance Mania</h3>
+                        <p>Show your moves in this epic dance battle!</p>
+                        <ul class="event-info">
+                            <li><i class="fas fa-clock"></i> 2 Hours</li>
+                            <li><i class="fas fa-users"></i> Solo/Group</li>
+                            <li><i class="fas fa-trophy"></i> ₹30,000 Prize</li>
+                        </ul>
+                        <button class="register-btn" onclick="openRegistrationModal('Dance Mania')">Register Now!</button>
+                    </div>
+                </a>
             </div>
 
             <div class="event-card" data-category="non-technical">
-                <div class="event-image" style="background-image: url('https://source.unsplash.com/400x300/?music-band')">
-                    <div class="event-date">March 19</div>
-                </div>
-                <div class="event-details">
-                    <h3>Battle of Bands</h3>
-                    <p>Rock the stage with your band!</p>
-                    <ul class="event-info">
-                        <li><i class="fas fa-clock"></i> 3 Hours</li>
-                        <li><i class="fas fa-users"></i> Band</li>
-                        <li><i class="fas fa-trophy"></i> ₹45,000 Prize</li>
-                    </ul>
-                    <button class="register-btn" onclick="openRegistrationModal('Battle of Bands')">Register Now!</button>
-                </div>
+                <a href="event-detail.html?event=battle-of-bands" class="event-link">
+                    <div class="event-image" style="background-image: url('https://source.unsplash.com/400x300/?music-band')">
+                        <div class="event-date">March 19</div>
+                    </div>
+                    <div class="event-details">
+                        <h3>Battle of Bands</h3>
+                        <p>Rock the stage with your band!</p>
+                        <ul class="event-info">
+                            <li><i class="fas fa-clock"></i> 3 Hours</li>
+                            <li><i class="fas fa-users"></i> Band</li>
+                            <li><i class="fas fa-trophy"></i> ₹45,000 Prize</li>
+                        </ul>
+                        <button class="register-btn" onclick="openRegistrationModal('Battle of Bands')">Register Now!</button>
+                    </div>
+                </a>
             </div>
 
             <div class="event-card" data-category="non-technical">
-                <div class="event-image" style="background-image: url('https://source.unsplash.com/400x300/?art')">
-                    <div class="event-date">March 20</div>
-                </div>
-                <div class="event-details">
-                    <h3>Art Attack</h3>
-                    <p>Express your creativity through art!</p>
-                    <ul class="event-info">
-                        <li><i class="fas fa-clock"></i> 5 Hours</li>
-                        <li><i class="fas fa-users"></i> Solo</li>
-                        <li><i class="fas fa-trophy"></i> ₹25,000 Prize</li>
-                    </ul>
-                    <button class="register-btn" onclick="openRegistrationModal('Art Attack')">Register Now!</button>
-                </div>
+                <a href="event-detail.html?event=art-attack" class="event-link">
+                    <div class="event-image" style="background-image: url('https://source.unsplash.com/400x300/?art')">
+                        <div class="event-date">March 20</div>
+                    </div>
+                    <div class="event-details">
+                        <h3>Art Attack</h3>
+                        <p>Express your creativity through art!</p>
+                        <ul class="event-info">
+                            <li><i class="fas fa-clock"></i> 5 Hours</li>
+                            <li><i class="fas fa-users"></i> Solo</li>
+                            <li><i class="fas fa-trophy"></i> ₹25,000 Prize</li>
+                        </ul>
+                        <button class="register-btn" onclick="openRegistrationModal('Art Attack')">Register Now!</button>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
