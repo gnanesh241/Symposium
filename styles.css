@@ -149,19 +149,21 @@ h1 {
     margin: 0 auto;
 }
 
-.event-card {
+/* Events section on home page */
+.events-section .event-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
     height: 100%;
 }
 
-.event-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+.events-section .event-details {
+    padding: 1.5rem;
+}
+
+.events-section .register-btn {
+    display: none; /* Hide register button on home page */
 }
 
 .event-image {
@@ -181,11 +183,21 @@ h1 {
     font-weight: 600;
 }
 
+.event-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
 .event-details {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex: 1;
+    min-height: 250px;
 }
 
 .event-details h3 {
@@ -197,7 +209,7 @@ h1 {
 .event-info {
     list-style: none;
     margin: 1rem 0;
-    flex-grow: 1;
+    margin-bottom: 4rem;
 }
 
 .event-info li {
@@ -212,7 +224,7 @@ h1 {
 }
 
 .register-btn {
-    width: 100%;
+    width: calc(100% - 3rem);
     padding: 0.8rem;
     background: var(--accent-color);
     border: none;
@@ -221,7 +233,9 @@ h1 {
     font-weight: 600;
     cursor: pointer;
     transition: background 0.3s ease;
-    margin-top: auto;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
 }
 
 .register-btn:hover {
@@ -612,9 +626,68 @@ a, button, .event-card {
     margin-bottom: 1rem;
 }
 
-.event-link {
+/* Registration section styles */
+.registration-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.registration-section .register-btn {
+    position: static;
+    width: auto;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    background: var(--primary-color);
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(255, 51, 102, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.registration-section .register-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 51, 102, 0.4);
+    background: var(--primary-color);
+}
+
+/* Events page specific styles */
+.events-page .event-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.events-page .event-link {
     text-decoration: none;
     color: inherit;
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    position: relative;
+}
+
+.events-page .event-details {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 250px;
+}
+
+.events-page .register-btn {
+    width: calc(100% - 3rem);
+    padding: 0.8rem;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
 }
