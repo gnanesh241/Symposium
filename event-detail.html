@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - CSEUTSAV '25</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="noise"></div>
+    <header>
+        <nav>
+            <div class="logo">CSEUTSAV '25 🚀</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="team.html">Team</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="event-detail-section">
+        <div class="event-hero">
+            <div class="event-image" id="eventImage"></div>
+            <div class="event-info-overlay">
+                <h1 id="eventTitle"></h1>
+                <div class="event-meta">
+                    <span id="eventDate"><i class="fas fa-calendar"></i></span>
+                    <span id="eventTime"><i class="fas fa-clock"></i></span>
+                    <span id="eventVenue"><i class="fas fa-map-marker-alt"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="event-content">
+            <div class="event-description">
+                <h2>About the Event</h2>
+                <p id="eventDescription"></p>
+            </div>
+
+            <div class="event-details-grid">
+                <div class="detail-card">
+                    <h3>Rules & Guidelines</h3>
+                    <ul id="eventRules"></ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Requirements</h3>
+                    <ul id="eventRequirements"></ul>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Prize Pool</h3>
+                    <div id="eventPrizes" class="prize-pool"></div>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Contact Coordinators</h3>
+                    <ul id="eventCoordinators" class="coordinators-list"></ul>
+                </div>
+            </div>
+
+            <div class="registration-section">
+                <button class="register-btn" onclick="openRegistrationModal()">Register Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="modal">
+        <!-- Same modal content as before -->
+    </div>
+
+    <footer>
+        <!-- Same footer as before -->
+    </footer>
+
+    <script src="event-data.js"></script>
+    <script src="event-detail.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
